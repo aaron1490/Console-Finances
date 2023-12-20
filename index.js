@@ -86,3 +86,18 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+// application title
+console.log('Financial Analysis');
+
+
+// line break within application
+console.log('----------------')
+
+
+// Checks for number of months that have been recorded - 86 months
+console.log('Total Months: ' + finances.length);
+
+// total summary
+console.log('Total: $' + );
