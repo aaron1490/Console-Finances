@@ -92,12 +92,36 @@ var finances = [
 console.log('Financial Analysis');
 
 
-// line break within application
+// physical line break within application
 console.log('----------------')
 
 
-// Checks for number of months that have been recorded - 86 months
-console.log('Total Months: ' + finances.length);
+// Checks for TOTAL number of months that have been recorded - 86 months
+var totalMonths = finances.length;
+console.log('Total Months: ' + totalMonths);
 
-// total summary
-console.log('Total: $' + );
+
+// TOTAL summary of difference across the 86 months
+var netProfitLoss = 0;
+for (var i = 0; i < totalMonths; i++) {
+  netProfitLoss += finances[i][1];
+}
+
+console.log('Total: $' + netProfitLoss);
+
+
+// AVERAGE CHANGE
+// STEP 1: Track monthly changes from month to month
+
+
+// Step 2: Find the average change from month to month
+
+
+
+// GREATEST INCREASE IN PROFITS/LOSSES
+
+
+
+// GREATEST DECREASE IN PROFITS/LOSSES
+
+
