@@ -88,35 +88,46 @@ var finances = [
 ];
 
 
-// application title with a new line of a physical line break within the console
+// application title with a new line of a physical line break within the console log
 console.log('Financial Analysis\n----------------');
 
 
-// Checks for TOTAL number of months that have been recorded - 86 months
+// Checks for TOTAL number of months that have been recorded
 var totalMonths = finances.length;
-console.log('Total Months: ' + totalMonths);
+console.log('Total Months: ' + totalMonths); //86 months
 
 
-// TOTAL net profit loss across the 86 months
-var netProfitLoss = 0;
+// TOTAL net profit loss across the months
+var netProfitLoss = 0; // initialise netProfitLoss variable
+
+//iterate throguh finances variable to calculate the netProfitLoss across the 86 months
 for (var i = 0; i < totalMonths; i++) {
   netProfitLoss += finances[i][1];
 }
-
-console.log('Total: $' + netProfitLoss);
+console.log('Total: $' + netProfitLoss); // print the result of netProfitLoss 
 
 
 // AVERAGE CHANGE
-// STEP 1: Track monthly changes from month to month
+var totalDifference = 0; // intialise the variable for totalDifference
 
+for (let i = 0; i < finances.length; i++) {
+  var month = finances[i][0]; // variable for the months within the array of the array
+  var balance = finances[i][1]; // variable for the balance value of the months
+  
+// loop through array miss the first month
+  if (i > 0) {
+    var previousBalance = finances[i - 1][1]; // variable targeting the balance of the previous month
+    var monthlyDifference = balance - previousBalance; // variable that targets the month by month difference in balance
+    totalDifference += monthlyDifference;
+  }
+}
 
+var averageChange = totalDifference / (totalMonths - 1) // setting variable for the average change between months
 
-// Step 2: Find the average change from month to month
-
+console.log('Average Change: $' + averageChange.toFixed(2)); //toFixed(2) changes the number to two decimal places. Useful link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 
 
 // GREATEST INCREASE IN PROFITS/LOSSES
-
 
 
 // GREATEST DECREASE IN PROFITS/LOSSES
