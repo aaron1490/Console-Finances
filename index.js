@@ -127,9 +127,27 @@ var averageChange = totalDifference / (totalMonths - 1) // setting variable for 
 console.log('Average Change: $' + averageChange.toFixed(2)); //toFixed(2) changes the number to two decimal places. Useful link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
 
 
-// GREATEST INCREASE IN PROFITS/LOSSES
+// initialising the variables used to calculate the best and worst months and balance in the array
+var maxProfit = 0;
+var maxLoss = 0;
+var bestMonth = 0;
+var worstMonth = 0;
 
+for (let i = 1; i < finances.length; i++) {
+  let monthlyDifference = finances[i][1] - finances[i-1][1];
 
-// GREATEST DECREASE IN PROFITS/LOSSES
-
-
+  // GREATEST INCREASE IN PROFITS/LOSSES
+  if (monthlyDifference > maxProfit) {
+    maxProfit = monthlyDifference;
+    bestMonth = finances[i][0];
+  }
+  
+  // GREATEST DECREASE IN PROFITS/LOSSES
+  if (monthlyDifference < maxLoss) {
+    maxLoss = monthlyDifference;
+    worstMonth = finances[i][0];
+  }
+}
+  
+console.log("Greatest Increase in Profits/Losses: " + bestMonth + " ($" + maxProfit + ")");
+console.log("Greatest Decrease in Profits/Losses: " + worstMonth + " ($" + maxLoss + ")");
