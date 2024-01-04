@@ -18,7 +18,7 @@ In this challenge I'll be using the concepts I've learnt to complete the require
 
 ## Instructions/demo for user
 
-1. Open the page from the [deployed link]() See below image for reference:
+1. Open the page from the [deployed link](https://aaron1490.github.io/Console-Finances/) See below image for reference:
 ![page demo](./images/demo.jpg)
 2. When you have the page open, right click on any blank space on the page and press "Inspect" (or press Ctrl + Shift + I for a shortcut).
 3. Within the inspection tool, press the "Console" tab which is located between the "Elements" and "Sources" tabs.
@@ -35,7 +35,7 @@ Feel free to contact me if you have any questions or just want to connect:
 ## Links
 
 * [Link to the code repository on Github](https://github.com/aaron1490/Console-Finances)
-* [Link to the deployed page]()
+* [Link to the deployed page](https://aaron1490.github.io/Console-Finances/)
 
 
 ## Instructions I was provided with
