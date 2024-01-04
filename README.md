@@ -1,10 +1,44 @@
 # Unit 4 Challenge: Console Finances
 
+Welcome to the repository for my Console Finances Unit 4 challenge.
+
 ## Overview
 
-In this challenge, you'll be using the concepts you've learned to complete the required activity. This activity presents a real-world situation in which your newfound JavaScript skills will come in handy. You are tasked with creating code for analyzing the financial records of a company. You have been provided with a financial dataset in the `starter/index.js` file.
+In this challenge I'll be using the concepts I've learnt to complete the required activity. The activity presents a real-world situation in which my newfound JavaScript skills will come in handy. I am tasked with creating code for analysing the financial records of a company. I've been provided with a financial dataset of the company's month-to-month bookkeeping records.
 
-## Instructions
+## Technologies Used
+
+* HTML5
+* JavaScript
+
+## Project Structure
+
+* index.html - The html file contains minimal offerings in this project as the bulk of the work is held within the JavaScript file.
+* index.js - The main feature of the project, where I have used JS to calculate the required criteria for the project.
+
+## Instructions/demo for user
+
+1. Open the page from the [deployed link]() See below image for reference:
+![page demo](./images/demo.jpg)
+2. When you have the page open, right click on any blank space on the page and press "Inspect" (or press Ctrl + Shift + I for a shortcut).
+3. Within the inspection tool, press the "Console" tab which is located between the "Elements" and "Sources" tabs.
+4. This is where you'll find the console print out of the required financial analysis criteria for the company.
+
+
+## Contact
+
+Feel free to contact me if you have any questions or just want to connect:
+* [Click here to email me!](mailto:aaronarmstrong1490@gmail.com)
+* [Connect with me on LinkedIn](https://www.linkedin.com/in/aaron-armstrong-%E8%89%BE%E4%BF%8A%E6%A8%82-80986ba5/)
+
+
+## Links
+
+* [Link to the code repository on Github](https://github.com/aaron1490/Console-Finances)
+* [Link to the deployed page]()
+
+
+## Instructions I was provided with
 
 1. Create a new GitHub repo called `Console-Finances`. Then, clone it to your computer.
 
